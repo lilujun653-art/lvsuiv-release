@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "0.6.10",
+  "releasedAt": "2026-09-12T17:34:58+08:00",
+  "notes": [
+    "新增「检查更新」通道：显示当前版本、检查新版、给出覆盖更新步骤"
+  ],
+  "minSupported": "0.6.0",
+  "zip": {
+    "url": "https://meikeji-d8gjamou7090c09a2-1454638672.tcloudbaseapp.com/lvsuiv/lvsuiv-0.6.10.zip",
+    "sha256": "9260092f01a1760f52c26f1cc1ed14596414fe76c45a7545965d7745bfa22cbb",
+    "size": 625485
+  },
+  "storeUrl": ""
+}
