@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>简历随行 · 隐私政策</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f4f6f2; color: #16181d;
+         font: 16px/1.75 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  h1 { font-size: 26px; margin: 0 0 6px; }
+  .sub { color: #6b7280; margin: 0 0 32px; font-size: 14px; }
+  h2 { font-size: 18px; margin: 34px 0 10px; padding-left: 10px; border-left: 3px solid #12513e; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th, td { border: 1px solid #c3cbd1; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #eef1ec; font-weight: 600; }
+  code { background: #eef1ec; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  .note { background: #fff8f5; border: 1px solid #f0d9d0; border-radius: 8px; padding: 12px 16px; margin: 18px 0; }
+  footer { margin-top: 40px; color: #6b7280; font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>隐私政策</h1>
+  <p class="sub">《简历随行 · 网申助手》浏览器扩展　　最后更新：2026-09-12</p>
+
+  <div class="note">
+    <strong>一句话说明：</strong>默认情况下，这个扩展不向任何服务器发送你的资料 —— 简历解析、保存、复制全部在你本机完成。
+    <strong>唯一的例外是「AI 补全」</strong>：只在本地认不出来时、并且<strong>你亲自点了那个按钮</strong>，
+    才把<strong>没能归位的那几行正文（发送前已自动屏蔽手机、邮箱、证件号等）</strong>发给我们自建的中转服务做这一次补全，
+    <strong>不存储、可随时关闭</strong>。
+  </div>
+
+  <h2>一、我们在本机处理哪些信息</h2>
+  <p>下列内容扩展在你本机处理，默认<strong>不发送给开发者或任何第三方</strong>：</p>
+  <ul>
+    <li>你主动导入的简历文件（PDF / Word / 文本）中提取出的文字；</li>
+    <li>由这些文字解析、并由你核对确认后保存的“个人档案”（姓名、联系方式、教育经历、工作与实习经历、项目经历、获奖与证书等）；</li>
+    <li>扩展的界面偏好（如面板位置、最近的搜索词）。</li>
+  </ul>
+  <p>以上内容全部存放在浏览器本地存储 <code>chrome.storage.local</code> 中，不经过服务器。</p>
+
+  <h2>二、「AI 补全」会发送什么、不会发送什么</h2>
+  <p>“AI 补全”是可选功能（默认开启、可随时关闭），用于把<strong>本地规则没能归位的那几行正文</strong>再认一遍。它的边界如下：</p>
+  <table>
+    <tr><th>会发送</th><th>不会发送</th></tr>
+    <tr>
+      <td>
+        · <strong>仅</strong>那些没有归位的正文行（最多 40 行、约 3000 字）；<br>
+        · 一份固定字段清单（如“学校名称”“开始时间”），不含你的任何值；<br>
+        · 协议版本号。<br>
+        发送前会在界面上<strong>逐行列出来</strong>，并显示已屏蔽了哪些内容。
+      </td>
+      <td>
+        · 已解析出来的档案字段值（姓名/手机/邮箱/经历内容等）；<br>
+        · 你保存的档案整体；<br>
+        · 你访问的网站地址、页面内容、截图；<br>
+        · 本机设备标识、授权码；<br>
+        · 证件号、密码、验证码、银行卡号等敏感项（本地直接跳过，永不外发）。
+      </td>
+    </tr>
+  </table>
+  <p>发送前会自动脱敏：手机号、座机、邮箱、身份证号、银行卡号、以及已知姓名会被替换为 <code>[手机]</code>、<code>[邮箱]</code>、<code>[姓名]</code> 之类的占位符，
+     中转服务只做这一次转发，<strong>不落盘、不留存内容</strong>（服务端只记录调用次数用于限额）。</p>
+  <p>控制方式：① 设置页「AI 补全」开关（关闭后一次都不会发送）；② 每次发送都需要你点按钮，不点不发；③ 同一份内容会走本地缓存，不会重复发送。</p>
+
+  <h2>三、什么时候会联网</h2>
+  <ul>
+    <li>你点扩展里的「检查更新」时，读取版本清单（只发版本号，不带任何个人资料）；</li>
+    <li>你点「用 AI 补齐这几段」时，把上面第二节列明的那几行脱敏正文发给我们自建的中转服务；</li>
+    <li>你正常浏览网页时，浏览器与该网站之间的通信（和你不装扩展时一样）。</li>
+  </ul>
+  <p>除以上三种情况，扩展不发起任何网络请求。扩展不含统计代码、不含广告、不做用户画像。
+     <strong>若后续新增其它需要联网的能力，我们会在启用前明确提示发送内容与接收方，并同步更新本政策与商店说明。</strong></p>
+
+  <h2>四、申请了哪些权限，为什么</h2>
+  <table>
+    <tr><th>权限</th><th>用途</th></tr>
+    <tr><td><code>storage</code></td><td>在本机保存你的档案、授权状态与界面偏好。</td></tr>
+    <tr><td><code>sidePanel</code></td><td>提供常驻的复制面板（点图标开关，不随点击网页而消失）。</td></tr>
+    <tr><td>可选权限 <code>activeTab</code> / <code>scripting</code> / <code>tabs</code></td><td>仅用于「自动填写」功能（<strong>该功能当前版本尚未开放，因此现在不会申请这几项权限</strong>）。将来启用时会先说明用途、由你确认后再申请。</td></tr>
+    <tr><td>可选权限：<code>https://*.tencentscf.com/*</code>（AI 补全中转服务）</td><td>「AI 补全」功能的中转服务地址（部署在腾讯云函数上）。只有在你第一次点「AI 补全」按钮时才申请，可拒绝；拒绝后其它功能不受影响，AI 补全不可用。</td></tr>
+  </table>
+
+  <h2>五、你对自己的数据有什么权利</h2>
+  <ul>
+    <li><strong>查看与修改：</strong>档案页可以随时查看、逐项修改；</li>
+    <li><strong>删除：</strong>档案页提供删除档案的功能；卸载扩展会一并清除本地数据；</li>
+    <li><strong>拒绝联网：</strong>关闭「AI 补全」开关后，扩展不再发送任何内容；不点按钮就不会发送；</li>
+    <li><strong>不联网使用：</strong>不使用「检查更新」与「AI 补全」时，扩展完全离线工作。</li>
+  </ul>
+
+  <h2>六、我们不做的事</h2>
+  <ul>
+    <li>不代替你提交任何申请，也不点击“提交”“投递”这类按钮；</li>
+    <li>不收集、不存储你的简历与档案到服务器；不向第三方出售、交换或共享你的资料；</li>
+    <li>不读取与表单填写无关的页面内容，不记录你的浏览记录。</li>
+  </ul>
+
+  <h2>七、联系方式</h2>
+  <p>对隐私政策有疑问，或希望删除已提供的信息，请联系：<strong>1786884739@qq.com</strong></p>
+
+  <h2>八、政策变更</h2>
+  <p>本政策如有更新，会修改页面顶部的“最后更新”日期，并在扩展更新说明中提示。涉及新增数据处理的变更，会在功能启用前单独向你确认。</p>
+
+  <footer>《简历随行 · 网申助手》</footer>
+</main>
+</body>
+</html>
