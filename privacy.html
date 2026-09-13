@@ -77,13 +77,14 @@
      <strong>若后续新增其它需要联网的能力，我们会在启用前明确提示发送内容与接收方，并同步更新本政策与商店说明。</strong></p>
 
   <h2>四、申请了哪些权限，为什么</h2>
+  <p><strong>本扩展不申请访问任何网站</strong>；只有你点了「用 AI 补齐这几段」时，才会把这几行已脱敏的文本发给我们自建的中转（<code>https://1454638672-hwza9hi1mf.ap-guangzhou.tencentscf.com</code>，不存储、可关闭）。</p>
   <table>
-    <tr><th>权限</th><th>用途</th></tr>
+    <tr><th>权限 / 域名</th><th>用途</th></tr>
     <tr><td><code>storage</code></td><td>在本机保存你的档案、授权状态与界面偏好。</td></tr>
     <tr><td><code>sidePanel</code></td><td>提供常驻的复制面板（点图标开关，不随点击网页而消失）。</td></tr>
-    <tr><td>可选权限 <code>activeTab</code> / <code>scripting</code> / <code>tabs</code></td><td>仅用于「自动填写」功能（<strong>该功能当前版本尚未开放，因此现在不会申请这几项权限</strong>）。将来启用时会先说明用途、由你确认后再申请。</td></tr>
-    <tr><td>可选权限：<code>https://*.tencentscf.com/*</code>（AI 补全中转服务）</td><td>「AI 补全」功能的中转服务地址（部署在腾讯云函数上）。只有在你第一次点「AI 补全」按钮时才申请，可拒绝；拒绝后其它功能不受影响，AI 补全不可用。</td></tr>
+    <tr><td>联网域名 <code>raw.githubusercontent.com</code> / <code>cdn.jsdelivr.net</code></td><td><strong>仅</strong>用于你点「检查更新」时读取版本清单（不含任何个人信息）。</td></tr>
   </table>
+  <p>本扩展<strong>不申请任何可选权限（optional permissions）</strong>，也不申请 <code>activeTab</code> / <code>scripting</code> / <code>tabs</code>：当前版本没有"自动填写网页"这类功能，因此这些权限一个都不需要。若将来新增需要新权限的功能，会先说明用途、由你确认后再申请。</p>
 
   <h2>五、你对自己的数据有什么权利</h2>
   <ul>
