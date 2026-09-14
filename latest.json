@@ -1,15 +1,18 @@
 {
   "schemaVersion": 1,
-  "version": "0.6.13",
-  "releasedAt": "2026-09-12T19:23:12+08:00",
+  "version": "0.6.22",
+  "releasedAt": "2026-09-14T10:31:35+08:00",
   "notes": [
     "新增「检查更新」通道：显示当前版本、检查新版、给出覆盖更新步骤"
   ],
   "minSupported": "0.6.0",
   "zip": {
-    "url": "https://cdn.jsdelivr.net/gh/lilujun653-art/lvsuiv-release@main/lvsuiv-0.6.13.zip",
-    "sha256": "eef2c73a9486c3941210777c4d18b234895e9bed15e4041c6127e4d167e668b9",
-    "size": 1625770
+    "url": "https://cdn.jsdelivr.net/gh/lilujun653-art/lvsuiv-release@main/lvsuiv-0.6.22.zip",
+    "sha256": "7864edc14957b6773bfbf4155415c6e4618dfd263493149d4234ba2c7b3b6816",
+    "size": 1655715
   },
-  "storeUrl": ""
+  "storeUrl": "",
+  "sigAlg": "ed25519-m1",
+  "kidOfManifestKey": "c0f20da1884b0fd89fd74d0bb62d648c4a316eeb460b1e57a7953cf4cb44e90b",
+  "sig": "JBmhzLg/9fNWKdGVnyArMAUF3mRn5YJn6kfYFYxzd2u0/Pz3CZr1Ymvk1Edngf7HJyWpo1FUErhicTjFMj1ADA=="
 }
